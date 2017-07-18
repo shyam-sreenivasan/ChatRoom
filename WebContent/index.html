@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Insert title here</title>
+		<script type="text/javascript" src="chat.js" ></script>
+	</head>
+	<body onload="init()">
+		<div class="container-fluid">
+			<h1 style="text-align:center">Chat Room</h1>
+		
+	 	 		<p>Enter name and connect</p>
+				<input type="button" id="connectbutton" value="Connect" onclick="connect()"  /> 
+				<input type="text" id="name" />
+				<input type="button" id="close" value="Close" onclick="closeSocket()"   /><br><br>
+				
+				<input type="button" id="create" value="CreateRoom" onclick="createroom()"  />
+				<input type="text" id="createid" />
+				<input type="button" id="exit" value="ExitRoom" onclick="exitroom()"  /><br><br>
+				
+				
+					<input type="button" id="join" value="JoinRoom" onclick="joinroom()"  />
+					<input type="text" id="selectroom" /><br><br>
+					
+				
+					
+				
+	 	  
+	 	  	<textarea style="background:#ffe6e6;" rows="10" cols="40" disabled id="textarea"></textarea>
+			<br>
+			<br>
+			<input type="text" name="inputtext" id="inputtext" size="50" /><br><br>
+	 	  	
+					<input type="button" id="send" value="Send" onclick="send()" /><br><br>
+				
+					
+				
+	 	 </div>
+	</body>
+</html>
